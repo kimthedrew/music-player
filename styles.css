@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(43, 39, 40);
+}
+h1 {
+    text-align: center;
+    background-color: blueviolet;
+}
+p {
+    text-align: center;
+}
+.input-container {
+    text-align: center;
+    margin-top: 20px;
+}
