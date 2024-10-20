@@ -1,9 +1,20 @@
 let currentSongIndex = 0;
 let currentMood = localStorage.getItem("userMood");
 let songs = {
-    happy:["music/the_wanted_chasing_the_sun.mp3"],
+    happy:["music/the_wanted_chasing_the_sun.mp3",
+        "music/one_direction_best_song_ever.mp3",
+        "music/fetty_wap_trap_queen.mp3",
+        "music/future_metro_boomin_travis_scott_playboi_carti_type_shit.mp3",
+        "music/pills_automobiles.mp3",
+        "music/a_boogie_wit_da_hoodie_look_back_at_it.mp3",
+        "music/chris_brown_under_the_influence.mp3"
+
+    ],
     sad: ["music/warriyo_mortals_ft._laura_brehm_mp3_69512.mp3",
-        "music/one_direction_best_song_ever.mp3", 
+        "music/mac_miller_my_favorite_part.mp3",
+        "music/hotel_ugly_shut_up_my_moms_calling.mp3",
+        "music/chris_brown_under_the_influence.mp3"
+        , 
         "music/maroon_5_payphone_explicit_ft._wiz_khalifa.mp3"],
     justThere: ["music/anne-marie_james_arthur_rewrite_the_stars_from_the_greatest_showman_reimagined.mp3"],
     all: ["music/warriyo_mortals_ft._laura_brehm_mp3_69512.mp3",
@@ -17,6 +28,22 @@ let songs = {
         "music/john_legend_all_of_me.mp3",
         "music/anne-marie_james_arthur_rewrite_the_stars_from_the_greatest_showman_reimagined.mp3",
         "music/night_lovell_forget_about_me.mp3",
+        "music/a_boogie_wit_da_hoodie_look_back_at_it.mp3",
+        "music/brandz_zion_intro.mp3",
+        "music/chanin_soulmate.mp3",
+        "music/chris_brown_under_the_influence.mp3",
+        "music/conga.mp3",
+        "music/d4vd_here_with_me.mp3",
+        "music/dababy_shake_sumn.mp3",
+        "music/dej_loaf_me_u_hennessy.mp3",
+        "music/fetty_wap_trap_queen.mp3",
+        "music/future_metro_boomin_travis_scott_playboi_carti_type_shit.mp3",
+        "music/hotel_ugly_shut_up_my_moms_calling.mp3",
+        "music/j._cole_work_out.mp3",
+        "music/love_songs_bonus.mp3",
+        "music/mac_miller_my_favorite_part.mp3",
+        "music/pills_automobiles.mp3",
+        "music/sauti_sol_afrikan_star_featuring_burna_boy.mp3"
 
     ]
 };
