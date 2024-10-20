@@ -1,21 +1,32 @@
 let currentSongIndex = 0;
 let currentMood = localStorage.getItem("userMood");
 let songs = {
-    happy:["music/the_wanted_chasing_the_sun.mp3",
+    happy:["music/prodbycpkshawn_ugly_andz_yo_bunny.mp3",
+        "music/the_wanted_chasing_the_sun.mp3",
         "music/one_direction_best_song_ever.mp3",
         "music/fetty_wap_trap_queen.mp3",
         "music/future_metro_boomin_travis_scott_playboi_carti_type_shit.mp3",
         "music/pills_automobiles.mp3",
         "music/a_boogie_wit_da_hoodie_look_back_at_it.mp3",
-        "music/chris_brown_under_the_influence.mp3"
+        "music/chris_brown_under_the_influence.mp3",
+        "music/oversized_t_shirt_matata_ft._sauti_sol.mp3",
+        "music/ssaru_ft._trio_mio_maintain.mp3",
+        "music/ssaru_x_tipsy_x_masauti_bad.mp3",
+        "music/tipsy_gee_spoiler_4t3_shumpele_shumpe.mp3", 
+        "music/matata_ft._watendawili_inakubalika.mp3"      
 
     ],
-    sad: ["music/warriyo_mortals_ft._laura_brehm_mp3_69512.mp3",
+    sad: ["music/victony_risk_official_visualizer.mp3",
+        "music/warriyo_mortals_ft._laura_brehm_mp3_69512.mp3",
         "music/mac_miller_my_favorite_part.mp3",
         "music/hotel_ugly_shut_up_my_moms_calling.mp3",
-        "music/chris_brown_under_the_influence.mp3"
-        , 
-        "music/maroon_5_payphone_explicit_ft._wiz_khalifa.mp3"],
+        "music/chris_brown_under_the_influence.mp3",
+        "music/tom_odell_another_love.mp3",
+        "music/maroon_5_payphone_explicit_ft._wiz_khalifa.mp3",
+        "music/matata_ft._watendawili_inakubalika.mp3",
+        "music/prodbycpkshawn_ugly_andz_yo_bunny.mp3",
+        "music/set_it_feat._ajay_buruklynboyz.mp3"
+    ],
     justThere: ["music/anne-marie_james_arthur_rewrite_the_stars_from_the_greatest_showman_reimagined.mp3"],
     all: ["music/warriyo_mortals_ft._laura_brehm_mp3_69512.mp3",
         "music/the_wanted_we_own_the_night.mp3",
@@ -56,10 +67,17 @@ let songs = {
         "music/ssaru_ft._trio_mio_maintain.mp3",
         "music/ssaru_x_tipsy_x_masauti_bad.mp3",
         "music/tipsy_gee_spoiler_4t3_shumpele_shumpe.mp3",
+        "music/set_it_feat._ajay_buruklynboyz.mp3",
         "music/tom_odell_another_love.mp3",
         "music/wstrn_ft._alkaline_txtin.mp3",
         "music/young_thug_relationship_feat._future.mp3",
-        "music/ytb_fatt_what_happened.mp3"
+        "music/ytb_fatt_what_happened.mp3",
+        "music/matata_ft._watendawili_inakubalika.mp3",
+        "music/prodbycpkshawn_ugly_andz_yo_bunny.mp3",
+        "music/rihanna_loveeeeeee_song.mp3",
+        "music/shaboozey_a_bar_song_tipsy.mp3",
+        "music/victony_risk_official_visualizer.mp3",
+        "music/oversized_t_shirt_matata_ft._sauti_sol.mp3"
 
     ]
 };
