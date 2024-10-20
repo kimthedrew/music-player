@@ -1,17 +1,32 @@
+* {
+    margin: 60px;
+    padding: 20px;
+    box-sizing: border-box;
+}
 body {
-    background-color: rgb(43, 39, 40);
-    justify-content: space-around;
+    background-color: rgb(17, 17, 17);
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center;
+    height: 100vh;
 }
 h1 {
     text-align: center;
     background-color: blueviolet;
+    border-radius: 50px;
+
 }
 p {
     text-align: center;
+    background-color: coral;
+    border-radius: 100px;
+
 }
 .input-container {
     text-align: center;
     margin-top: 20px;
-    background-color: antiquewhite;
-    padding: 10px;
+    background-color: rgb(238, 178, 99);
+    padding: 0px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(red, green, blue, alpha);
 }

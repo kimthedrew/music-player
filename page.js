@@ -43,7 +43,23 @@ let songs = {
         "music/love_songs_bonus.mp3",
         "music/mac_miller_my_favorite_part.mp3",
         "music/pills_automobiles.mp3",
-        "music/sauti_sol_afrikan_star_featuring_burna_boy.mp3"
+        "music/sauti_sol_afrikan_star_featuring_burna_boy.mp3",
+        "music/4mr_frank_white-alicia_keys.mp3",
+        "music/eminem_tobey_feat._big_sean_babytron.mp3",
+        "music/glorilla_tgif.mp3",
+        "music/iyaz_replay.mp3",
+        "music/king_von_crazy_story.mp3",
+        "music/lil_baby_gunna_drake_never_recover.mp3",
+        "music/lil_baby_gunna.mp3",
+        "music/nle_choppa_stickin_and_movin.mp3",
+        "music/polo_g_martin_gina.mp3",
+        "music/ssaru_ft._trio_mio_maintain.mp3",
+        "music/ssaru_x_tipsy_x_masauti_bad.mp3",
+        "music/tipsy_gee_spoiler_4t3_shumpele_shumpe.mp3",
+        "music/tom_odell_another_love.mp3",
+        "music/wstrn_ft._alkaline_txtin.mp3",
+        "music/young_thug_relationship_feat._future.mp3",
+        "music/ytb_fatt_what_happened.mp3"
 
     ]
 };
@@ -55,7 +71,9 @@ function loadSongs() {
     if (songs[currentMood]) {
         songs[currentMood].forEach((song, index) => {
             let listItem = document.createElement("li");
-            listItem.innerHTML = `${song} <button onclick="playSong(${index})">Play</button> <button onclick="deleteSong(${index})">Delete</button>`;
+            listItem.innerHTML = `${song} 
+            <button onclick="playSong(${index})">Play</button> 
+            <button onclick="deleteSong(${index})">Delete</button>`;
             musicList.appendChild(listItem);
         });
     }
@@ -89,6 +107,10 @@ function nextSong() {
         currentSongIndex = 0;
     }
     playSong(currentSongIndex);
+}
+
+function skipSong() {
+    nextSong();
 }
 
 function addSong() {
