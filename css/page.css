@@ -15,3 +15,8 @@ h1 {
     background-color: rgb(196, 37, 174);
     border-radius: 20px;
 }
+#search-bar {
+    background-origin: padding-box;
+    border-radius: 20px;
+    box-shadow: inset;
+}

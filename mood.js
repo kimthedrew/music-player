@@ -4,7 +4,7 @@ const moods = {
     sad: ["music/one_direction_best_song_ever.mp3"],
     justThere: ["music/anne-marie_james_arthur_rewrite_the_stars_from_the_greatest_showman_reimagined.mp3"],
     all: ["music/warriyo_mortals_ft._laura_brehm_mp3_69512.mp3"],
-    nostalgia: []
+    nostalgia: ["music/xxxtentacion_sad.mp3"]
 };
 
 function checkName() {

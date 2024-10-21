@@ -140,19 +140,30 @@ let songs = {
     ]
 };
 
-function loadSongs() {
+function loadSongs(searchTerm = '') {
     const musicList = document.getElementById("musicList");
     musicList.innerHTML = '';
 
     if (songs[currentMood]) {
-        songs[currentMood].forEach((song, index) => {
+        const filteredSongs = songs[currentMood].filter(song => {
+            const songName = song.split('/').pop().replace(/_/g, ' ').replace('.mp3', '');
+            return songName.toLowerCase().includes(searchTerm.toLowerCase());
+        });
+
+        filteredSongs.forEach((song, index) => {
+            let songName = song.split('/').pop().replace(/_/g, ' ').replace('.mp3', '');
             let listItem = document.createElement("li");
-            listItem.innerHTML = `${song} 
+            listItem.innerHTML = `${songName} 
             <button onclick="playSong(${index})">Play</button> 
             <button onclick="deleteSong(${index})">Delete</button>`;
             musicList.appendChild(listItem);
         });
     }
+}
+
+function searchSongs() {
+    const searchInput = document.getElementById("search-bar").value;
+    loadSongs(searchInput);
 }
 
 function playSong(index) {
@@ -190,11 +201,13 @@ function skipSong() {
 }
 
 function addSong() {
-    const newSong = document.getElementById("newSong").Value;
+    const newSong = document.getElementById("newSong").value;
     if (newSong) {
         songs[currentMood].push(newSong);
         loadSongs();
     }
 }
 
-window.onload = loadSongs;
+window.onload = function() {
+    loadSongs();
+}
