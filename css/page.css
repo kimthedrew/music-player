@@ -1,22 +1,29 @@
-body {
-    background-color: palevioletred;
-    text-align: center;
 }
 #audioPlayer {
     background-color: crimson;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
 
 }
 #musicList {
     background-color: rgb(223, 91, 183);
     border-radius: 30px;
     padding: 10px;
+    margin: 20px auto;
+    witdth: 80%;
 }
 h1 {
     background-color: rgb(196, 37, 174);
     border-radius: 20px;
+    padding: 10px;
+    color: white;
 }
 #search-bar {
     background-origin: padding-box;
     border-radius: 20px;
-    box-shadow: inset;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    margin: 20px auto;
+    width: 50%;
 }
