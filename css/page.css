@@ -3,26 +3,32 @@ body {
     text-align: center;
     margin: 0;
     height: 100vh;
+    font-family: Arial, sans-serif;
+    color: white;
 }
 #audioPlayer {
     background-color: crimson;
     padding: 20px;
     margin: 20px auto;
     width: 80%;
+    border-radius: 20px;
 
 }
 #musicList {
-    background-color: rgb(223, 91, 183);
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 30px;
     padding: 10px;
     margin: 20px auto;
     width: 80%;
+    list-style-type: none;
 }
 h1 {
     background-color: rgb(196, 37, 174);
     border-radius: 20px;
     padding: 10px;
     color: white;
+    margin: 20px auto;
+    width: 80%;
 }
 #search-bar {
     background-origin: padding-box;
@@ -31,4 +37,36 @@ h1 {
     padding: 10px;
     margin: 20px auto;
     width: 50%;
+    border: none;
+    outline: none;
+}
+
+button {
+    background-color: rgb(196, 37, 174);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: rgb(223, 91, 183);
+}
+input[type="text"] {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin: 10px;
+}
+#musicList li {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
