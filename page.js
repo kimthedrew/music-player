@@ -1,5 +1,5 @@
 let currentSongIndex = 0;
-let currentMood = localStorage.getItem("userMood");
+let currentMood = localStorage.getItem("userMood") || "all";
 let songs = {
     happy:["music/prodbycpkshawn_ugly_andz_yo_bunny.mp3",
         "music/the_wanted_chasing_the_sun.mp3",
@@ -205,6 +205,7 @@ function addSong() {
     if (newSong) {
         songs[currentMood].push(newSong);
         loadSongs();
+        document.getElementById("newSong").value = "";
     }
 }
 
