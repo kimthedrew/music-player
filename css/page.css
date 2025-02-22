@@ -1,3 +1,9 @@
+body {
+    background: linear-gradient(to bottom, pink, purple);
+    text-align: center;
+    margin: 0;
+    height: 100vh;
+}
 #audioPlayer {
     background-color: crimson;
     padding: 20px;
